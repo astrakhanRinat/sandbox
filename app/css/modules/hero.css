@@ -1,0 +1,3 @@
+.hero__header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, auto); }

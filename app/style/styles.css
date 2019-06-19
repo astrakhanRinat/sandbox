@@ -1,0 +1,69 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --blue: hsl(208, 11%, 55%);
+  --white: whitesmoke;
+  --black: rgba(0, 0, 0, 0.9);
+  --light-grey: rgba(0, 0, 0, 0.1);
+  --font-size: 18px;
+  --font-poppins: "Poppins", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  font-family: var(--font-open-sans);
+  font-size: var(--font-size);
+  color: var(--black); }
+
+h1,
+h2 {
+  font-family: var(--font-poppins); }
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.hero {
+  padding: 50px 30px;
+  text-align: center;
+  background: var(--pale-cyan) url(../../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero__header {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center; }
+  .hero__logo img {
+    display: block;
+    width: 100%; }
+  .hero__button_small {
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    padding: 8px 20px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    box-shadow: 0 3px 7px var(--light-grey); }
+
+.footer__socials ion-icon {
+  font-size: 30px;
+  color: var(--blue);
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 5px; }
