@@ -1,4 +1,6 @@
 %button_small {
+  text-align: center;
+  text-decoration: none;
   font-family: var(--font-open-sans);
   font-size: 0.9rem;
   font-weight: 700;
@@ -26,6 +28,7 @@
 }
 
 %button_large {
+  text-decoration: none;
   font-family: var(--font-open-sans);
   font-size: var(--font-size);
   font-weight: 700;

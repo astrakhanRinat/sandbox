@@ -11,6 +11,8 @@
   --font-open-sans: "Open Sans", sans-serif; }
 
 .hero__button_small {
+  text-align: center;
+  text-decoration: none;
   font-family: var(--font-open-sans);
   font-size: 0.9rem;
   font-weight: 700;
@@ -31,6 +33,7 @@
     outline: none; }
 
 .hero__button_large, .more__button {
+  text-decoration: none;
   font-family: var(--font-open-sans);
   font-size: var(--font-size);
   font-weight: 700;
@@ -97,7 +100,8 @@ h2 {
     font-size: 2.2rem;
     margin: 0; }
   .hero__desc {
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 50px;
     line-height: 1.5;
     font-size: 1.4rem; }
   .hero__image {
@@ -138,11 +142,12 @@ h2 {
   background: var(--white);
   margin: 50px auto;
   position: relative;
-  -webkit-transform: translateY(50%);
-  transform: translateY(50%); }
+  -webkit-transform: translateY(70%);
+  transform: translateY(70%); }
   .more__title {
     font-size: 1.5rem;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 50px; }
 
 .footer {
   background: var(--dark-cyan);
@@ -217,7 +222,8 @@ h2 {
     .hero__content {
       text-align: left; }
     .hero__desc {
-      margin: 20px 0;
+      margin-top: 20px;
+      margin-bottom: 50px;
       font-size: 20px; }
     .hero__image {
       margin-top: 0; }

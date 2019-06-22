@@ -8,11 +8,12 @@
   margin: 50px auto;
 
   position: relative;
-  transform: translateY(50%);
+  transform: translateY(70%);
 
   &__title {
     font-size: 1.5rem;
     margin-top: 0;
+    margin-bottom: 50px;
   }
 
   &__button {
