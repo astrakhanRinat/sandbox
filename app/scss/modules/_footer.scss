@@ -1,11 +1,87 @@
 .footer {
+  background: var(--dark-cyan);
+  padding: 200px 60px 70px;
+  color: var(--white);
+
+  &__contacts > * {
+    padding-left: 35px;
+    z-index: 1;
+  }
+
+  &__logo {
+    filter: invert(100%) grayscale(100%);
+    margin-bottom: 30px;
+    padding-left: 0;
+    display: inline-block;
+
+    &:hover {
+      filter: invert(100%) grayscale(100%) brightness(60%);
+    }
+  }
+
+  &__address {
+    background: 0px 5px url(../../images/icon-location.svg) no-repeat;
+    background: url(../../images/icon-location.svg) no-repeat left center;
+    margin-bottom: 30px;
+  }
+
+  &__phone {
+    background: url(../../images/icon-phone.svg) no-repeat left center;
+    margin-bottom: 30px;
+  }
+
+  &__email {
+    background: url(../../images/icon-email.svg) no-repeat left center;
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      line-height: 2;
+    }
+  }
+
   &__socials {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
     ion-icon {
       font-size: 30px;
-      color: var(--blue);
-      border: 2px solid green;
+      border: 2px solid var(--white);
       border-radius: 50%;
       padding: 5px;
+      margin-right: 10px;
+
+      &:hover {
+        filter: brightness(60%);
+      }
+    }
+  }
+
+  &__copyright,
+  &__attribution {
+    text-align: center;
+  }
+
+  a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--white);
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  &__attribution {
+    font-size: 0.6rem;
+
+    a {
+      text-decoration: underline;
     }
   }
 }
