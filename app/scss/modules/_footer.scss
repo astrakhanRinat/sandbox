@@ -4,8 +4,15 @@
   color: var(--white);
 
   &__contacts > * {
-    padding-left: 35px;
-    z-index: 1;
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  &__contacts svg {
+    width: 20px;
+    height: 20px;
   }
 
   &__logo {
@@ -19,19 +26,12 @@
     }
   }
 
-  &__address {
-    background: 0px 5px url(../../images/icon-location.svg) no-repeat;
-    background: url(../../images/icon-location.svg) no-repeat left center;
-    margin-bottom: 30px;
-  }
-
+  &__address,
   &__phone {
-    background: url(../../images/icon-phone.svg) no-repeat left center;
     margin-bottom: 30px;
   }
 
   &__email {
-    background: url(../../images/icon-email.svg) no-repeat left center;
     margin-bottom: 60px;
   }
 
