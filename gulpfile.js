@@ -7,19 +7,19 @@ function goSass() {
   return gulp
     .src('app/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('app/afterSass'))
     .pipe(browserSync.stream());
 }
 
 function goAutoprefixer() {
   return gulp
-    .src('app/css/*.css')
+    .src('app/afterSass/*.css')
     .pipe(
       autoprefixer({
         cascade: false
       })
     )
-    .pipe(gulp.dest('app/style'));
+    .pipe(gulp.dest('app/afterAutoprefixer'));
 }
 
 function goServer() {
@@ -30,7 +30,7 @@ function goServer() {
     }
   });
   gulp.watch('app/scss/**/*.scss', goSass);
-  // gulp.watch("app/css/*.css", goAutoprefixer);
+  gulp.watch('app/afterSass/*.css', goAutoprefixer);
   gulp.watch(['app/*.html', 'app/js/**/*.js']).on('change', browserSync.reload);
 }
 
