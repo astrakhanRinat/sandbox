@@ -1,3 +1,21 @@
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+
 body {
-  background: yellow;
+  margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: whitesmoke;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
 }
