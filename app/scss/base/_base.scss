@@ -53,6 +53,29 @@ body {
   cursor: pointer;
 }
 
+#authors {
+  .info-header {
+    margin-bottom: 5rem;
+  }
+
+  h5 {
+    color: $gray-600;
+  }
+
+  .card:hover {
+    background: $primary;
+    color: $white;
+
+    .fab {
+      color: $white;
+    }
+
+    h5 {
+      color: $gray-500;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   #showcase {
     min-height: 650px;

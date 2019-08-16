@@ -7058,6 +7058,20 @@ body {
 .collapse-item {
   cursor: pointer; }
 
+#authors .info-header {
+  margin-bottom: 5rem; }
+
+#authors h5 {
+  color: #6c757d; }
+
+#authors .card:hover {
+  background: #3292a6;
+  color: whitesmoke; }
+  #authors .card:hover .fab {
+    color: whitesmoke; }
+  #authors .card:hover h5 {
+    color: #adb5bd; }
+
 @media (min-width: 992px) {
   #showcase {
     min-height: 650px; }
