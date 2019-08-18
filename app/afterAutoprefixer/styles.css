@@ -7580,6 +7580,9 @@ body {
   #authors .card:hover h5 {
     color: #adb5bd; }
 
+#contact img {
+  width: 50%; }
+
 @media (min-width: 992px) {
   #showcase {
     min-height: 650px; }
@@ -7588,4 +7591,6 @@ body {
   .mb-resp {
     margin-bottom: 0; }
   .info-header {
-    width: 50%; } }
+    width: 50%; }
+  #contact img {
+    width: 100%; } }
